@@ -1,0 +1,31 @@
+﻿<Window x:Class="CCNTSS_Computer_Lock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CCNTSS_Computer_Lock"
+        mc:Ignorable="d"
+        Title="Lock" AllowsTransparency="True" WindowStyle="None" Height="450" Width="800" Topmost="True" PreviewLostKeyboardFocus="Window_PreviewLostKeyboardFocus">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Width="285" Height="35" FontSize="25" FontWeight="Bold" Grid.Column="1"><Run Text="You croemtpu si lkocd"/></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="55"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Passwork" VerticalAlignment="Center" Width="55" HorizontalAlignment="Left"/>
+            <TextBox x:Name="Passwork" Grid.Column="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="673"/>
+            <Button x:Name="unlock_button" Grid.Column="2" Content="unlock" HorizontalAlignment="Center" Width="60" Background="White" BorderBrush="Black" Click="unlock_button_Click"/>
+
+        </Grid>
+
+
+    </Grid>
+</Window>
